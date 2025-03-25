@@ -1,0 +1,453 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+header {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+/* Logo */
+.logo-right img {
+    height: 60px;
+}
+
+/* Navbar List */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Smooth Hover Slide Effect */
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: #e04444;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 180px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e65c00;
+}
+
+/* Wishlist */
+.wishlist {
+    display: flex;
+    align-items: center;
+}
+
+.wishlist a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.wishlist a:hover {
+    color: #e65c00;
+    font-size: 20px;
+}
+
+.wishlist svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    fill: #ff6600;
+    transition: fill 0.3s;
+}
+
+.wishlist a:hover svg {
+    fill: #e65c00;
+}
+
+/* Product Slider Section */
+.product-slider {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.product-slider h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.product-slider p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Slider Container */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none; /* Hide scrollbar */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-card button:hover {
+    background: #e65c00;
+}
+
+/* Slider Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 50%;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: black;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    flex: 1;
+}
+
+.search-bar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3b3b;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 40px;
+    height: 40px;
+}
+
+.search-bar button:hover {
+    background-color: #e63939;
+}
+
+.search-bar button svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Login Button */
+.login a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff3b3b, #ff6600);
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(255, 99, 71, 0.3);
+}
+
+/* Hover Effect */
+.login a:hover {
+    background: linear-gradient(135deg, #ff6600, #ff3b3b);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 99, 71, 0.5);
+}
+
+/*product- slider */
+.product-slider{
+    background: #f8d4d4;
+}
+.prev-btn {
+    left: -10px; /* Move it further to the left */
+}
+.prev-btn {
+    left: 5px;  /* Move left button closer */
+    z-index: 10; /* Ensure it's above other elements */
+}
+.product-card img {
+    width: 100%;  /* Ensure full width of the card */
+    height: 300px; /* Set height to match 4:6 ratio */
+    object-fit: cover; /* Crop excess to maintain aspect ratio */
+    border-radius: 10px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 0;
+    background: #fff;
+  }
+  
+  .feature {
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .feature i {
+    font-size: 40px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #777;
+  }
+/* Use Custom Google Fonts */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+/* Individual Feature */
+.feature {
+    flex: 1;
+    max-width: 250px;
+}
+
+/* SVG Icons */
+.feature svg {
+    margin-bottom: 10px;
+}
+
+/* Heading Font */
+.feature h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Description Font */
+.feature p {
+    font-size: 14px;
+    color: #777;
+    font-family: 'Lora', serif;
+}
+.category-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+  }
+  
+  .category {
+    text-align: center;
+  }
+  
+  .category img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+  }
+  
+  .category a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .category a:hover {
+    color: #000;
+  }
+  

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-right">
+                <img src="../public/assets/svg/LUXIVA.svg" alt="Luxiva Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                        <path d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z"></path>
+                        </svg>
+                </button>
+            </div>
+    
+            <div class="wishlist">
+                <a href="#">
+                    <span>Wishlist</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Sliding Product Section -->
+    <section class="product-slider">
+        <h2>New Collections</h2>
+        <p>Discover our latest arrivals with stylish trends and premium quality.</p>
+
+        <div class="slider-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="slider">
+                <!-- Product Cards will be inserted here dynamically -->
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </section>
+  
+    <section class="features">
+        <div class="feature">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                <path d="M16 2v4M8 2v4M3 10h18"></path>
+            </svg>
+            <h3>Book An Appointment</h3>
+            <p>Plan your visit with a personal stylist.</p>
+        </div>
+    
+        <div class="feature">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2l1.5 4h9L18 2"></path>
+                <rect x="3" y="6" width="18" height="14" rx="2"></rect>
+            </svg>
+            <h3>Pick Up In Store</h3>
+            <p>Order online and collect in store easily.</p>
+        </div>
+    
+        <div class="feature">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 12l-8-8-8 8"></path>
+                <path d="M12 20V4"></path>
+            </svg>
+            <h3>Special Packaging</h3>
+            <p>Beautiful gift wrapping for special moments.</p>
+        </div>
+    
+        <div class="feature">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 11V7a4 4 0 0 0-8 0v4"></path>
+                <rect x="4" y="11" width="16" height="10" rx="2"></rect>
+            </svg>
+            <h3>Free Global Returns</h3>
+            <p>Easy returns on all international orders.</p>
+        </div>
+    </section>
+    <section class="category-section">
+        <div class="category">
+            <img src="../public/images/categories/men.jpg" alt="Shop for Men">
+            <a href="public/pages/men.html">SHOP FOR MEN</a>
+        </div>
+        <div class="category">
+            <img src="../public/images/categories/women.jpg" alt="Shop for Women">
+            <a href="public/pages/women.html">SHOP FOR WOMEN</a>
+        </div>
+        <div class="category">
+            <img src="../public/images/categories/accessories.jpg" alt="Shop Accessories">
+            <a href="public/pages/accessories.html">SHOP ACCESSORIES</a>
+        </div>
+    </section>
+    
+      
+  
+    <script src="../public/assets/js/slider.js"></script>
+
+</body>
+</html>
+
